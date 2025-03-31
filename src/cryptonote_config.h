@@ -80,8 +80,8 @@ static_assert(STAKING_PORTIONS % 3 == 0, "Use a multiple of three, so that it di
 //////
 
 // MONEY_SUPPLY - total number coins to be generated
-#define MONEY_SUPPLY                                    ((uint64_t)(1050000000000))
-#define EMISSION_SPEED_FACTOR_PER_MINUTE                (22)
+#define MONEY_SUPPLY                                    8000000000000000000
+#define EMISSION_SPEED_FACTOR_PER_MINUTE                (21)
 #define FINAL_SUBSIDY_PER_MINUTE                        ((uint64_t)30)
 
 #define CRYPTONOTE_REWARD_BLOCKS_WINDOW                 100
@@ -159,7 +159,7 @@ static_assert(STAKING_PORTIONS % 3 == 0, "Use a multiple of three, so that it di
 
 #define ALLOW_DEBUG_COMMANDS
 
-#define CRYPTONOTE_NAME                         "uplexa"
+#define CRYPTONOTE_NAME                         "mevacoin"
 #define CRYPTONOTE_POOLDATA_FILENAME            "poolstate.bin"
 #define CRYPTONOTE_BLOCKCHAINDATA_FILENAME      "data.mdb"
 #define CRYPTONOTE_BLOCKCHAINDATA_LOCK_FILENAME "lock.mdb"
@@ -201,9 +201,9 @@ namespace config
   uint16_t const ZMQ_RPC_DEFAULT_PORT = 21062;
 
   boost::uuids::uuid const NETWORK_ID = { {
-      0xF1 ,0xF1, 0x00, 0x61 , 0x71, 0x01 , 0x41, 0x61, 0x00, 0x30, 0x82, 0xA1, 0x12, 0x16, 0xA1, 0xA1
+      0xcf, 0x74, 0x21, 0x8a, 0x75, 0x61, 0x41, 0x0b, 0x8e, 0xa7, 0xa3, 0xa9, 0xc0, 0x12, 0x4b, 0x92 
     } }; // Bender's nightmare
-    std::string const GENESIS_TX = "013c01ff0005090299f780a50b4a32bb073160d9ffd9ac3a56b8848cbd4fca1a32f2e3b4bdda32601e028df8a2887b6fc40c8a5f8d71da9071e4ec7e73d3dfebc30f1ee2aac5c7fbd56aac020223c639861f1259cf41dcbccdac8e68f5194e9a15e7817accd97fbe52239d832cd0860302736caee707092c733eeea0b019fac896c0f66829c57815fd8b68e8c53ebd3ed8c09a0c02d62dd9aa3ca0b9c4dfa5361a9a908f2207a0dba415e46db5110eb7e60f61186121018790193f157f45d642de432da453be81b1f2d2d358757823c0f48e444859491d";
+    std::string const GENESIS_TX = "013c01ff0001d9d3b3ed826f029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121014351dc6ae3569a83d4a3293cffaae947b245fd788bf6dea88f95db78f9623f33";
     uint32_t const GENESIS_NONCE = 10000;
 
     uint64_t const GOVERNANCE_REWARD_INTERVAL_IN_BLOCKS = ((60 * 60 * 24 * 7) / DIFFICULTY_TARGET_V2);
