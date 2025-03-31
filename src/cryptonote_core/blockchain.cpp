@@ -84,14 +84,10 @@ static const struct {
   uint8_t threshold;
   time_t time;
 } mainnet_hard_forks[] = {
-<<<<<<< HEAD
-  { 1, 1, 0, 1745539200 },  // Versione 1 - 25 aprile 2024
-=======
-  // version 1 from the start of the blockchain
+  // Versione 1 - 25 aprile 2024
   { 1, 1, 0, 1745539200 },
-  
->>>>>>> c527cb882b24b410f93afc629e1529c9c8f637f7
 };
+
 static const uint64_t mainnet_hard_fork_version_1_till = 1;
 
 static const struct {
