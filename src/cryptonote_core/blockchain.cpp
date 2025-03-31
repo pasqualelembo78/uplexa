@@ -85,7 +85,7 @@ static const struct {
   time_t time;
 } mainnet_hard_forks[] = {
   // version 1 from the start of the blockchain
-  { 1, 1, 0, 1341378000 },
+  { 1, 1, 0, 1745539200 },
   
 };
 static const uint64_t mainnet_hard_fork_version_1_till = 1;
